@@ -43,18 +43,18 @@
         </div>
     </div>
     <div>
-        <p>Add New: <input type="text" id="newSkill" placeholder="add bew here"></p>
-        <button id="demoButton" onclick="changePageBackground()">Other Banner Color!</button>
-        <button id="demoButton" onclick="changeBackground()">Other Page Background!</button>
+        <p>Add New: <input type="text" id="newSkill" placeholder="add bucket list"></p>
+        <button id="demoButton" onclick="changeFontWeight()">Make the style Bold!</button>
+        <button id="demoButton" onclick="changeFontFam()">Other Font Family!</button>
         <button id="demoButton" onclick="addNewElement()">Add New Bucket List!</button>
     </div>
 </body>
 <script>
-    function changeBackground() {
-        document.querySelector('body').style.backgroundColor = '#FFA09B';
+    function changeFontWeight() {
+        document.querySelector('.container').style.fontWeight = 'bold';
     }
-    function changePageBackground() {
-        document.querySelector('.container').style.backgroundColor = '#FFC785';
+    function changeFontFam() {
+        document.querySelector('.container').style.fontFamily = 'times new roman';
     }
     function addNewElement() {
         var myInput = document.getElementById("newSkill").value;
